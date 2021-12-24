@@ -1,8 +1,10 @@
-package com.bridgelabz.addressbookapp.Service;
-import com.bridgelabz.addressbookapp.DTO.ContactDTO;
-        import com.bridgelabz.addressbookapp.model.Contact;
+package com.example.addressbookapplication.service;
 
-        import java.util.List;
+
+import com.example.addressbookapplication.dto.ContactDTO;
+import com.example.addressbookapplication.model.Contact;
+
+import java.util.List;
 
 public interface IAddressBookService {
     List<Contact> getContact();
@@ -13,5 +15,5 @@ public interface IAddressBookService {
 
     Contact updateContact(int contactId, ContactDTO contactDTO);
 
-    void deleteContact(int contactId);
+
 }
